@@ -23,8 +23,18 @@ A static site generator written in [Rust](http://www.rust-lang.org/).
 
 ## Installation
 
+Usually:
+
 ```
   $ cargo install cobalt-bin
+```
+
+On macOS Sierra:
+
+```
+export OPENSSL_INCLUDE_DIR=`brew --prefix openssl`/include
+export LIBRARY_PATH=`brew --prefix openssl`/lib
+cargo install cobalt-bin
 ```
 
 ## Examples
